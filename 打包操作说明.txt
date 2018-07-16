@@ -1,0 +1,7 @@
+1. 在程序所在文件夹目录下，打开命令窗口
+2. 执行 "pyinstaller -F 程序名" 命令，若未安装 pyinstaller ,先执行 pip install pyinstaller 进行安装
+3. 消除exe可执行文件执行时的黑窗口：（打包好的可执行文件在dist文件夹下）进行第二次打包，同上目录下执行 pyinstaller -F -w 程序名
+4. 更换程序图标：先制作一个或下载一个 ico 图标，可在www.bitbug.net 站点对已有图片进行ico制作，在程序所在目录下执行 "pyinstaller -F -i 图标.ico 程序名"
+
+
+总结：一步到位命令  pyinstaller -F -w -i 图标.ico 程序名
